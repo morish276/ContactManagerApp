@@ -1,5 +1,5 @@
 <h1>
-  <img src="https://github.com/morish276/ContactManagerApp/raw/main/app/src/main/ic_launcher-playstore.png" alt="ManageMate Logo" width="40"/>
+  <img src="https://github.com/morish276/ContactManagerApp/blob/main/app/src/main/res/drawable/Copilot_20250605_133704.png" alt="ManageMate Logo" width="40"/>
   ManageMate — A Contact Manager App
 </h1>
 
