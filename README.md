@@ -1,5 +1,4 @@
 # 📇 ManageMate — A Contact Manager App
-[![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/morish276/ContactManagerApp/actions)
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.0-blue?logo=kotlin&style=flat-square)](https://kotlinlang.org/)
 [![Android](https://img.shields.io/badge/platform-Android-blue?logo=android&style=flat-square)](https://developer.android.com/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://github.com/morish276/ContactManagerApp/blob/main/LICENSE)
