@@ -44,37 +44,8 @@ https://github.com/user-attachments/assets/8413c95f-c6fc-4f3e-accb-47992fc7bb31
 
 ## 🏗️ Project Structure
 
-```
-com.example.managemate/
-├── MainActivity.kt
-├── repository/
-│ └── ContactRepository.kt
-├── room/
-│ ├── Contact.kt
-│ ├── ContactDAO.kt
-│ └── ContactDatabase.kt
-├── view/
-│ └── MyRecyclerViewAdapter.kt
-├── viewmodel/
-│ ├── ContactViewModel.kt
-│ └── ViewModelFactory.kt
+![32f73816-18ce-49f4-aad4-9a88402a0a05](https://github.com/user-attachments/assets/5b89b9f2-16a5-490c-9fcf-e0ac12812dbc)
 
-res/
-├── layout/
-│ ├── activity_main.xml
-│ └── card_item.xml
-├── drawable/
-│ ├── rounded_bg.xml
-│ ├── edittext_bg.xml
-│ └── ic_launcher_background.xml, ...
-├── font/
-│ └── montserrat_medium.ttf, montserrat_bold.ttf
-├── values/
-│ └── colors.xml, themes.xml, strings.xml, etc.
-
-manifests/
-└── AndroidManifest.xml
-```
 ---
 
 ## 🧠 Learnings
