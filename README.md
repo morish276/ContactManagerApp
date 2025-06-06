@@ -24,7 +24,7 @@ ManageMate is a simple yet functional **Contact Management Android app** built u
 
 ## 📸 Demo
 
-
+https://github.com/user-attachments/assets/8413c95f-c6fc-4f3e-accb-47992fc7bb31
 
 ---
 
@@ -44,6 +44,7 @@ ManageMate is a simple yet functional **Contact Management Android app** built u
 
 ## 🏗️ Project Structure
 
+```
 com.example.managemate/
 ├── MainActivity.kt
 ├── repository/
@@ -73,7 +74,7 @@ res/
 
 manifests/
 └── AndroidManifest.xml
-
+```
 ---
 
 ## 🧠 Learnings
@@ -94,7 +95,7 @@ This project helped me understand and implement:
 1. Clone this repo  
    `git clone https://github.com/morish276/ContactManagerApp.git`
 2. Open in Android Studio
-3. Click **Run ▶️** or use emulator/device
+3. Click **Run ▶** or use emulator/device
 
 ---
 
