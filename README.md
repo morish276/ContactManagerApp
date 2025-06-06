@@ -1,7 +1,8 @@
-<h1 align="center">
+<h1>
   <img src="https://github.com/morish276/ContactManagerApp/raw/main/app/src/main/ic_launcher-playstore.png" alt="ManageMate Logo" width="40"/>
   ManageMate — A Contact Manager App
 </h1>
+
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.0-blue?logo=kotlin&style=flat-square)](https://kotlinlang.org/)
 [![Android](https://img.shields.io/badge/platform-Android-blue?logo=android&style=flat-square)](https://developer.android.com/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://github.com/morish276/ContactManagerApp/blob/main/LICENSE)
