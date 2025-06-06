@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- DATA BINDING: Declare ViewModel variable -->
+    <data>
+        <variable
+            name="contactViewModel"
+            type="com.example.managemate.viewmodel.ContactViewModel" />
+    </data>
+
+    <!-- ROOT CONTAINER: Main screen layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#353535"
+        android:padding="24dp"
+        android:id="@+id/main">
+
+        <!-- SECTION: Input Card (Name, Email, Save Button) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/inputCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_bg"
+            android:elevation="4dp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- EditText: Name input (two-way data binding) -->
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Enter your name"
+                android:paddingHorizontal="16dp"
+                android:text="@={contactViewModel.inputName}"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- EditText: Email input (two-way data binding) -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Enter your email"
+                android:paddingHorizontal="16dp"
+                android:text="@={contactViewModel.inputEmail}"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etName" />
+
+            <!-- Button: Save or Update action -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FF5722"
+                android:fontFamily="@font/montserrat_bold"
+                android:onClick="@{()-> contactViewModel.saveOrUpdate()}"
+                android:text="@{contactViewModel.saveOrUpdateButtonText}"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etEmail" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- SECTION: RecyclerView Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Contact List :"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputCard" />
+
+        <!-- RecyclerView: Displays the contact list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_bg"
+            android:clipToPadding="false"
+            android:elevation="4dp"
+            android:padding="20dp"
+            app:layout_constraintBottom_toTopOf="@id/btnClearAll"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputCard" />
+
+        <!-- Button: Clear All or Delete (dual functionality) -->
+        <Button
+            android:id="@+id/btnClearAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#E91E63"
+            android:fontFamily="@font/montserrat_bold"
+            android:onClick="@{()-> contactViewModel.clearAllorDelete()}"
+            android:text="@{contactViewModel.clearAllOrDeleteButtonText}"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
