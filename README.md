@@ -7,6 +7,7 @@
 ManageMate is a simple yet functional **Contact Management Android app** built using modern Android architecture components. It allows users to **add, update, and delete contact entries**, backed by **Room Database** and **LiveData** for real-time UI updates.
 
 ✅ **All code is well-commented with step-by-step explanations** to help beginners learn easily.
+
 ---
 
 ## 📱 Features
