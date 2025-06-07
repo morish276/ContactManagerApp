@@ -107,14 +107,14 @@ This project helped me understand and implement:
 
 ---
 
-## 📬 Feedback & Contributions
+## 🙌 Feedback or Contributions
 
 Have suggestions or found a bug?  
 Feel free to [open an issue](https://github.com/morish276/ContactManagerApp/issues) or submit a pull request.
 
----
+⭐ If you found this project helpful, consider giving it a star to show your support!
 
-Feel free to star ⭐ the repository if you found it helpful!
+---
 
 Thanks for checking out **ContactManagerApp**!  
 Happy coding! 💻🚀
