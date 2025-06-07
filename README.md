@@ -52,6 +52,39 @@ https://github.com/user-attachments/assets/8413c95f-c6fc-4f3e-accb-47992fc7bb31
 
 ---
 
+## 💡 App Architecture (MVVM + Room)
+
+```
+UI (MainActivity, activity_main.xml)
+│
+▼
+ViewModel (ContactViewModel)
+│
+▼
+Repository (ContactRepository)
+│
+▼
+Room Database (DAO + Contact Entity)
+```
+
+---
+
+## 🔄 Flow of Data
+
+1. User enters Name and Email → Clicks Save
+
+2. ViewModel (saveOrUpdate) calls Repository
+
+3. Repository calls DAO to insert data into Room DB
+
+4. LiveData<List<Contact>> observes Room changes
+
+5. RecyclerView updates automatically
+
+6. Clicking on item sends selected contact to ViewModel for editing
+
+---
+
 ## 🧠 Learnings
 
 This project helped me understand and implement:
@@ -65,7 +98,7 @@ This project helped me understand and implement:
 
 ---
 
-## 💡 How to Run
+## ⚙️ How to Run
 
 1. Clone this repo  
    `git clone https://github.com/morish276/ContactManagerApp.git`
@@ -80,6 +113,8 @@ Have suggestions or found a bug?
 Feel free to [open an issue](https://github.com/morish276/ContactManagerApp/issues) or submit a pull request.
 
 ---
+
+Feel free to star ⭐ the repository if you found it helpful!
 
 Thanks for checking out **ContactManagerApp**!  
 Happy coding! 💻🚀
